@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Leo Przybylski" />
+
+    <!-- Le styles -->
+    <link href="http://www.u.arizona.edu/~przybyls/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="http://www.u.arizona.edu/~przybyls/assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="http://www.u.arizona.edu/~przybyls/assets/css/docs.css" rel="stylesheet" />
+    <link href="http://www.u.arizona.edu/~przybyls/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.kuali.org/sites/all/themes/kualiv1/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.u.arizona.edu/~przybyls/assets/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.u.arizona.edu/~przybyls/assets/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.u.arizona.edu/~przybyls/assets/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="http://www.u.arizona.edu/~przybyls/assets/ico/apple-touch-icon-57-precomposed.png" />
+    <b:skin><![CDATA[
+
+/* Variable definitions
+   ====================
+   <Variable name="textcolor" description="Text Color"
+             type="color" default="#000" value="#000000">
+
+   <Variable name="bgcolor" description="Page Background Color"
+             type="color" default="#f6f6f6" value="#f6f6f6">
+
+   <Variable name="pagetitlecolor" description="Blog Title Color"
+             type="color" default="#F5DEB3" value="#F5DEB3">
+
+   <Variable name="pagetitlebgcolor" description="Blog Title Background Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+  <Variable name="descriptionColor" description="Blog Description Color"
+            type="color" default="#9E5205"  value="#9E5205"/>
+
+   <Variable name="descbgcolor" description="Description Background Color"
+             type="color" default="#F5E39e" value="#F5E39e">
+
+   <Variable name="titlecolor" description="Post Title Color"
+             type="color" default="#9E5205" value="#9E5205">
+
+   <Variable name="datecolor" description="Date Header Color"
+             type="color" default="#777777" value="#777777">
+
+   <Variable name="footercolor" description="Post Footer Color"
+             type="color" default="#444444" value="#444444">
+
+   <Variable name="linkcolor" description="Link Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+   <Variable name="footerlinkcolor" description="Post Footer Link Color"
+             type="color" default="#968a0a" value="#968a0a">
+
+   <Variable name="visitedlinkcolor" description="Visited Link Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+   <Variable name="sidebarcolor" description="Sidebar Title Color"
+             type="color" default="#B8A80D" value="#B8A80D">
+
+   <Variable name="sidebarlinkcolor" description="Sidebar Link Color"
+             type="color" default="#999999" value="#999999">
+
+   <Variable name="bordercolor" description="Border Color"
+             type="color" default="#e0ad12" value="#e0ad12">
+
+   <Variable name="bodyfont" description="Text Font"
+             type="font"
+             default="normal normal 100% 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif" value="normal normal 100% 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif">
+
+   <Variable name="headerfont" description="Sidebar Title Font"
+             type="font"
+             default="normal bold 150% Verdana,Sans-serif" value="normal bold 150% Verdana,Sans-serif">
+
+   <Variable name="dateHeaderFont" description="Date Header Font"
+             type="font"
+             default="normal bold 105% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif" value="normal bold 105% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif">
+
+   <Variable name="pagetitlefont" description="Blog Title Font"
+             type="font" default="normal bold 300% Verdana,Sans-Serif" value="normal bold 300% Verdana,Sans-Serif">
+
+   <Variable name="titlefont" description="Post Title Font"
+             type="font" default="normal bold 160% Verdana,Sans-Serif" value="normal bold 160% Verdana,Sans-Serif">
+   <Variable name="startSide" description="Start side in blog language"
+             type="automatic" default="left" value="left">
+   <Variable name="endSide" description="End side in blog language"
+             type="automatic" default="right" value="right">
+*/
+.code {
+    white-space : pre;
+    /* width : 55em; */
+    overflow-x : scroll;
+    border : thin solid #86B2B4;
+/*    background-color : #B0C4DE; */
+    background-color : #E9ECEC;
+    font-family : monospace;
+    font-size : 8pt;
+    font-style : oblique;
+    padding : 1em 0 1em 1em;
+}
+.not-front .main-content h1, .not-front .main-content h2, .not-front .main-content h3 {
+font-family: Georgia, Serif;
+text-transform: none;
+font-weight: normal;
+}
+.not-front .main-content h1 {
+font-family: Garamond, Georgia, serif;
+font-size: 300%;
+}
+.not-front .main-content h2 {
+padding-top: 25px;
+font-size: 200%;
+}
+.not-front .main-content h3 {
+font-style: italic;
+font-size: 130%;
+font-weight: bold;
+}
+#stalker {
+clear: both;
+z-index: 100;
+width: 100%;
+}
+.prime .main-nav {
+padding-bottom: 0px;
+}
+.prime .message p {
+font-family: minion-pro-1, minion-pro-2, Georgia, serif;
+font-family: minion-pro-1, minion-pro-2, sans-serif;
+font-size: 1.5em;
+margin-right: 0px;
+color: #B3B3B3;
+font-style: italic;
+text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+width: 600px;
+}
+]]></b:skin>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
+      <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'/>
+    </b:section>
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="http://kualigan.blogspot.com/p/resume_28.html">Resume</a>
+              </li>
+              <li class="">
+                <a href='http://r351574nc3.github.com/lbcopy'>rsmart-lb-ant</a>
+              </li>
+              <li class="">
+                <a href='http://r351574nc3.github.com/lbext'>rsmart-lb-extensions</a>
+              </li>
+              <li class=''><a href='http://r351574nc3.github.com/lb-maven-plugin'>lb-maven-plugin</a></li>
+              <li class=''><a href='http://r351574nc3.github.com/rice-lb-ext'>rice-lb-extensions</a></li>
+              <li class=''><a href='http://r351574nc3.github.com/maven-kuali-skin'>maven-kuali-skin</a></li>
+<!--<li class='first leaf active-trail active menu-mlid-655'><a class='active-trail active' href='/rice' title='Overview of Rice'>Overview</a></li>
+<li class='leaf has-children menu-mlid-674'><a href='/rice/modules'>Modules</a></li>
+<li class='leaf menu-mlid-680'><a href='/rice/partners'>Partners</a></li>
+<li class='leaf menu-mlid-686'><a href='/rice/timeline' title='Roadmap for Rice'>Timeline</a></li>
+<li class='leaf menu-mlid-682'><a href='/rice/organization'>Organization</a></li>
+<li class='last leaf has-children menu-mlid-684'><a href='/rice/implementations' title='Who&apos;s using Rice?'>Implementations</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <img src="http://r351574nc3.github.com/rice-lb-ext/images/kualigan.png" />
+    <p class="lead">n. <i>Slang</i> a rough lawless young <a href='http://www.kuali.org'>Kuali</a> developer.<br/>
+                    [perhaps variant of <i>Houlihan</i>, Irish <i>surname</i>]<br/>
+<b>kualiganism</b>  n<br/></p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <!--
+          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdowns</a></li>
+          <li><a href="#buttonGroups"><i class="icon-chevron-right"></i> Button groups</a></li>
+          <li><a href="#buttonDropdowns"><i class="icon-chevron-right"></i> Button dropdowns</a></li>
+          <li><a href="#navs"><i class="icon-chevron-right"></i> Navs</a></li>
+          <li><a href="#navbar"><i class="icon-chevron-right"></i> Navbar</a></li>
+          <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> Breadcrumbs</a></li>
+          <li><a href="#pagination"><i class="icon-chevron-right"></i> Pagination</a></li>
+          <li><a href="#labels-badges"><i class="icon-chevron-right"></i> Labels and badges</a></li>
+          <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
+          <li><a href="#thumbnails"><i class="icon-chevron-right"></i> Thumbnails</a></li>
+          <li><a href="#alerts"><i class="icon-chevron-right"></i> Alerts</a></li>
+          <li><a href="#progress"><i class="icon-chevron-right"></i> Progress bars</a></li>
+          <li><a href="#misc"><i class="icon-chevron-right"></i> Misc</a></li>
+          -->
+        </ul>
+      </div>
+      <div class="span7">
+        <b:section class='subheader' id='subheader' maxwidgets='1' showaddelement='no'>
+          <b:widget id='Header1' locked='true' title='Kualigan (Header)' type='Header'/>
+        </b:section>
+        <b:section class='blog' id='blog' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+        </b:section>
+
+      </div>
+      <div class="span2">
+        <b:section class='sidebar' id='sidebar' preferred='yes'>
+          <b:widget id='Profile1' locked='false' title='About Me' type='Profile'/>
+          <b:widget id='Subscribe1' locked='false' title='Subscribe To' type='Subscribe'/>
+          <b:widget id='Label1' locked='false' title='Labels' type='Label'/>
+          <b:widget id='PageList1' locked='false' title='Pages' type='PageList'/>
+          <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
+        </b:section>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/jquery.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-transition.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-alert.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-modal.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-tab.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-popover.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-button.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-affix.js"></script>
+    <script src="http://www.u.arizona.edu/~przybyls/assets/js/application.js"></script>
+
+    <script type='text/javascript'>
+      $('.post').each(function() {
+          var postid = $(this).find('a').attr('name')
+          var title = $(this).find('.post-title>a').text()
+
+          $('ul.bs-docs-sidenav').append(
+              $('<li></li>').append($('<i></i>').attr({class : 'icon-chevron-right'}))
+              .append(
+                  $('<a></a>').attr({ href : '#' + postid }).text(title)
+              )
+          )
+      });
+    </script>
+
+    <!-- Analytics
+    ================================================== -->
+<script type='text/javascript'>
+var gaJsHost = ((&quot;https:&quot; == document.location.protocol) ? &quot;https://ssl.&quot; : &quot;http://www.&quot;);
+document.write(unescape(&quot;%3Cscript src=&#39;&quot; + gaJsHost + &quot;google-analytics.com/ga.js&#39; type=&#39;text/javascript&#39;%3E%3C/script%3E&quot;));
+</script>
+<script type='text/javascript'>
+try {
+var pageTracker = _gat._getTracker(&quot;UA-16006964-1&quot;);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+  </body>
+</html>
