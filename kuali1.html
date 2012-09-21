@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' expr:dir='data:blog.languageDirection' itemtype='http://schema.org/Blog' version='XHTML+RDFa 1.0' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:content='http://purl.org/rss/1.0/modules/content/' xmlns:data='http://www.google.com/2005/gml/data' xmlns:dc='http://purl.org/dc/terms/' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:og='http://ogp.me/ns#' xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#' xmlns:sioc='http://rdfs.org/sioc/ns#' xmlns:sioct='http://rdfs.org/sioc/types#' xmlns:skos='http://www.w3.org/2004/02/skos/core#' xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<head profile='http://www.w3.org/1999/xhtml/vocab'>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
+<!-- Add the following three tags inside head -->
+<meta content='Kualigan' itemprop='name'/>
+<meta content='Notes and best practices from a Kuali Release Manager' itemprop='description'/>
+<meta about='/commercial-affiliate-interests' content='0' datatype='xsd:integer' property='sioc:num_replies'/>
+<link href='http://www.kuali.org/sites/all/themes/kualiv1/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
+<meta about='/commercial-affiliate-interests' content='Commercial Affiliate Program ' property='dc:title'/>
+<link href='/commercial-affiliate-interests' rel='canonical'/>				<link href='http://www.kuali.org/sites/all/themes/kuali/favicon.ico' rel='shortcut icon' type='image/x-icon'/> 
+		<meta content='text/html; charset=utf-8' http-equiv='Content-Type'/> 
+<link href='http://www.u.arizona.edu/~przybyls/assets/css/bootstrap.css' rel='stylesheet'/>
+<link href='http://www.u.arizona.edu/~przybyls/assets/css/bootstrap-responsive.css' rel='stylesheet'/>
+<!--
+<link href='http://www.u.arizona.edu/~przybyls/assets/css/docs.css' rel='stylesheet'/>
+-->
+<link href='http://www.u.arizona.edu/~przybyls/assets/js/google-code-prettify/prettify.css' rel='stylesheet'/>
+<style media='all' type='text/css'>@import url(&quot;http://www.kuali.org/modules/system/system.base.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/system/system.menus.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/system/system.messages.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/system/system.theme.css?lu0li7&quot;);</style>
+<style media='all' type='text/css'>@import url(&quot;http://www.kuali.org/modules/comment/comment.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/sites/all/modules/date/date_api/date.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/field/theme/field.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/node/node.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/search/search.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/modules/user/user.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/sites/all/modules/views/css/views.css?lu0li7&quot;);</style>
+<style media='all' type='text/css'>@import url(&quot;http://www.kuali.org/sites/all/modules/ckeditor/ckeditor.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/sites/all/modules/ctools/css/ctools.css?lu0li7&quot;);</style>
+<style media='all' type='text/css'>@import url(&quot;http://www.kuali.org/sites/all/themes/kualiv1/css/reset.css?lu0li7&quot;);
+@import url(&quot;http://www.kuali.org/sites/all/themes/kualiv1/css/layout.css?lu0li7&quot;);</style>
+<link href='http://www.u.arizona.edu/~przybyls/css/global-static.css' rel='stylesheet' type='text/css'/> 
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/jquery.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/google-code-prettify/prettify.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-transition.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-alert.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-modal.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-dropdown.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-scrollspy.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-tab.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-tooltip.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-popover.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-button.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-collapse.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-carousel.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-typeahead.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/bootstrap-affix.js'/>
+    <script src='http://www.u.arizona.edu/~przybyls/assets/js/application.js'/>
+     <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+    <b:skin><![CDATA[
+
+/* Variable definitions
+   ====================
+   <Variable name="textcolor" description="Text Color"
+             type="color" default="#000" value="#000000">
+
+   <Variable name="bgcolor" description="Page Background Color"
+             type="color" default="#f6f6f6" value="#f6f6f6">
+
+   <Variable name="pagetitlecolor" description="Blog Title Color"
+             type="color" default="#F5DEB3" value="#F5DEB3">
+
+   <Variable name="pagetitlebgcolor" description="Blog Title Background Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+  <Variable name="descriptionColor" description="Blog Description Color"
+            type="color" default="#9E5205"  value="#9E5205"/>
+
+   <Variable name="descbgcolor" description="Description Background Color"
+             type="color" default="#F5E39e" value="#F5E39e">
+
+   <Variable name="titlecolor" description="Post Title Color"
+             type="color" default="#9E5205" value="#9E5205">
+
+   <Variable name="datecolor" description="Date Header Color"
+             type="color" default="#777777" value="#777777">
+
+   <Variable name="footercolor" description="Post Footer Color"
+             type="color" default="#444444" value="#444444">
+
+   <Variable name="linkcolor" description="Link Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+   <Variable name="footerlinkcolor" description="Post Footer Link Color"
+             type="color" default="#968a0a" value="#968a0a">
+
+   <Variable name="visitedlinkcolor" description="Visited Link Color"
+             type="color" default="#DE7008" value="#DE7008">
+
+   <Variable name="sidebarcolor" description="Sidebar Title Color"
+             type="color" default="#B8A80D" value="#B8A80D">
+
+   <Variable name="sidebarlinkcolor" description="Sidebar Link Color"
+             type="color" default="#999999" value="#999999">
+
+   <Variable name="bordercolor" description="Border Color"
+             type="color" default="#e0ad12" value="#e0ad12">
+
+   <Variable name="bodyfont" description="Text Font"
+             type="font"
+             default="normal normal 100% 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif" value="normal normal 100% 'Trebuchet MS',Trebuchet,Verdana,Sans-Serif">
+
+   <Variable name="headerfont" description="Sidebar Title Font"
+             type="font"
+             default="normal bold 150% Verdana,Sans-serif" value="normal bold 150% Verdana,Sans-serif">
+
+   <Variable name="dateHeaderFont" description="Date Header Font"
+             type="font"
+             default="normal bold 105% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif" value="normal bold 105% 'Trebuchet MS',Trebuchet,Verdana,Sans-serif">
+
+   <Variable name="pagetitlefont" description="Blog Title Font"
+             type="font" default="normal bold 300% Verdana,Sans-Serif" value="normal bold 300% Verdana,Sans-Serif">
+
+   <Variable name="titlefont" description="Post Title Font"
+             type="font" default="normal bold 160% Verdana,Sans-Serif" value="normal bold 160% Verdana,Sans-Serif">
+   <Variable name="startSide" description="Start side in blog language"
+             type="automatic" default="left" value="left">
+   <Variable name="endSide" description="End side in blog language"
+             type="automatic" default="right" value="right">
+*/
+.code {
+    white-space : pre;
+    /* width : 55em; */
+    overflow-x : scroll;
+    border : thin solid #86B2B4;
+/*    background-color : #B0C4DE; */
+    background-color : #E9ECEC;
+    font-family : monospace;
+    font-size : 8pt;
+    font-style : oblique;
+    padding : 1em 0 1em 1em;
+}
+.not-front .main-content h1, .not-front .main-content h2, .not-front .main-content h3 {
+font-family: Georgia, Serif;
+text-transform: none;
+font-weight: normal;
+}
+.not-front .main-content h1 {
+font-family: Garamond, Georgia, serif;
+font-size: 300%;
+}
+.not-front .main-content h2 {
+padding-top: 25px;
+font-size: 200%;
+}
+.not-front .main-content h3 {
+font-style: italic;
+font-size: 130%;
+font-weight: bold;
+}
+#stalker {
+clear: both;
+z-index: 100;
+width: 100%;
+}
+.prime .main-nav {
+padding-bottom: 0px;
+}
+.prime .message p {
+font-family: minion-pro-1, minion-pro-2, Georgia, serif;
+font-family: minion-pro-1, minion-pro-2, sans-serif;
+font-size: 1.5em;
+margin-right: 0px;
+color: #B3B3B3;
+font-style: italic;
+text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+width: 600px;
+}
+]]></b:skin>
+    <script type='text/javascript'>var contextPath = &#39;&#39;;</script>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/com.atlassian.auiplugin:ajs.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/jira-global.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/jquery-fancybox.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/calendar.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/viewissue.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/autocomplete.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/key-commands.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/header.js'/>
+<script language='javascript' src='http://www.u.arizona.edu/~przybyls/js/set-focus.js'/>
+  </head>
+<body class='html not-front not-logged-in no-sidebars page-node page-node- page-node-236 node-type-subpage stalker'>
+<a href='https://github.com/r351574nc3/'><img alt='Fork me on GitHub' src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png' style='position: absolute; top: 0; right: 0; border: 0;'/></a>
+  <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
+<b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'/>
+</b:section>
+
+  <div id='skip-link'>
+    <a class='element-invisible element-focusable' href='#main-menu'>Jump to Navigation</a>
+  </div>
+    <div class='subpage' id='wrapper'>   <!-- header -->
+	<div class='header clearfix'>
+                <div class='drawer'>
+                        <div class='inner'>
+                                <div class='drawer-content'>
+                                                                        </div>
+                        </div>
+                </div>
+		<div class='inner'>
+				            <div class='logo'>
+	              <a href='/' rel='home' title='Home'>Kuali Foundation</a>
+	            </div>
+	          	          
+			<div class='quick-nav'>
+				  <div class='region region-quicknav'>
+    <div class='block block-search first odd' id='block-search-form'>
+
+      
+  <div class='content'>
+    <form accept-charset='UTF-8' action='/rice' id='search-block-form' method='post'><div><div class='container-inline'>
+      <h2 class='element-invisible'>Search form</h2>
+    <div class='form-item form-type-textfield form-item-search-block-form'>
+  <label class='element-invisible' for='edit-search-block-form--2'>Search </label>
+ <input class='form-text' id='edit-search-block-form--2' maxlength='128' name='search_block_form' size='15' title='Enter the terms you wish to search for.' type='text' value=''/>
+</div>
+<div class='form-actions form-wrapper' id='edit-actions'><input class='form-submit' id='edit-submit' name='op' type='submit' value='Search'/></div><input name='form_build_id' type='hidden' value='form-oYDfSnoGf9ckKjHKZDmDDndjK85_Cn6RtBS3h5DhWm4'/>
+<input name='form_id' type='hidden' value='search_block_form'/>
+</div>
+</div></form>  </div></div>
+
+</div><!-- /.block -->
+<div class='block block-menu last even' id='block-menu-menu-quick-links'>
+
+        <h2 class='block-title'>Quick Links</h2>
+    
+  <div class='content'>
+    <ul class='menu'><li class='first leaf'><a href='/about' title='About Kuali'>About</a></li>
+<li class='leaf'><a href='http://kuali.org/kis/' title=''>Find People</a></li>
+<li class='last leaf'><a href='/contact' title='Contact Kuali'>Contact</a></li>
+</ul>  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+			</div>
+		</div>
+	</div>   <!-- /header -->
+
+	<div class='prime clearfix'>   <!-- prime -->
+		<div class='inner'>
+			<div class='main-nav clearfix'>
+				  <div class='region region-topnav'>
+    <div class='block block-block first odd' id='block-block-6'>
+
+      
+  <div class='content'>
+    <div class='upcoming-event'>
+<a href='http://kuali.org/kd2012/' title='Kuali Days: October 14-16, Austin, TX'>
+  <h4>Kuali Days &#39;12</h4>
+  <p class='details'>Oct 14-16, Austin, TX</p>
+</a>
+</div>
+  </div>
+</div><!-- /.block -->
+<div class='block block-menu-block last even' id='block-menu-block-4'>
+
+      
+  <div class='content'>
+    <div class='menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-1'>
+  <ul class='menu'><li class='first leaf menu-mlid-198'><a href='/'>Home</a></li>
+<li class='expanded active-trail menu-mlid-425'><a class='active-trail' href='http://www.kuali.org/software'>Software</a><ul class='menu'><li class='first leaf has-children active-trail active menu-mlid-542'><a class='active-trail active' href='/rice'>Kuali Rice</a></li>
+<li class='leaf has-children menu-mlid-426'><a href='/kfs' title='Kuali Financial System (KFS)'>Kuali Financial System</a></li>
+<li class='leaf has-children menu-mlid-543'><a href='http://www.kuali.org/kc' title='Kuali Coeus for Research'>Kuali Coeus</a></li>
+<li class='leaf has-children menu-mlid-548'><a href='http://www.kuali.org/mobility'>Kuali Mobility</a></li>
+<li class='leaf has-children menu-mlid-545'><a href='http://www.kuali.org/OLE'>Kuali Online Library Env</a></li>
+<li class='leaf has-children menu-mlid-547'><a href='http://www.kuali.org/KPME'>Kuali People Mgmt</a></li>
+<li class='leaf has-children menu-mlid-546'><a href='http://www.kuali.org/ready'>Kuali Ready</a></li>
+<li class='last leaf has-children menu-mlid-544'><a href='http://www.kuali.org/ks'>Kuali Student</a></li>
+</ul></li>
+<li class='expanded menu-mlid-761'><a href='http://www.kuali.org/get-involved'>Get Involved</a><ul class='menu'><li class='first leaf menu-mlid-627'><a href='/membership'>Join Kuali</a></li>
+<li class='leaf menu-mlid-767'><a href='http://www.kuali.org/become-partner'>Become a Partner</a></li>
+<li class='leaf menu-mlid-792'><a href='http://www.kuali.org/contribute'>Contribute Your Code</a></li>
+<li class='leaf menu-mlid-769'><a href='http://www.kuali.org/jobs'>Find a Job</a></li>
+<li class='last leaf menu-mlid-947'><a href='http://www.kuali.org/kd'>Kuali Days</a></li>
+</ul></li>
+<li class='expanded menu-mlid-626'><a href='http://www.kuali.org/Community'>Community</a><ul class='menu'><li class='first leaf menu-mlid-639'><a href='http://www.kuali.org/Community' title=''>Overview</a></li>
+<li class='leaf menu-mlid-636'><a href='http://www.kuali.org/community-values'>Kuali Values</a></li>
+<li class='leaf menu-mlid-630'><a href='http://www.kuali.org/Members'>Members</a></li>
+<li class='leaf menu-mlid-629'><a href='http://www.kuali.org/about/partners'>Partners</a></li>
+<li class='last leaf has-children menu-mlid-804'><a href='http://www.kuali.org/adopter-stories'>Adopter-Stories</a></li>
+</ul></li>
+<li class='expanded menu-mlid-552'><a href='http://www.kuali.org/resources'>Resources</a></li>
+<li class='last expanded menu-mlid-696'><a href='http://www.kuali.org/support'>Support</a><ul class='menu'><li class='first leaf menu-mlid-768'><a href='/gethelp'>Get Help</a></li>
+<li class='leaf has-children menu-mlid-764'><a href='http://www.kuali.org/commercial-affiliate-interests'>Commercial Affiliate Program</a></li>
+<li class='leaf menu-mlid-628'><a href='http://www.kuali.org/foundation-staff'>Foundation Staff</a></li>
+<li class='last leaf menu-mlid-773'><a href='http://www.kuali.org/kca-support'>Commercial Support</a></li>
+</ul></li>
+</ul></div>
+  </div>
+</div><!-- /.block -->
+  </div><!-- /.region -->
+			</div>
+              <div class='message'>   <!-- primary message -->
+				<div class='breadcrumb'> <a href='/' title='Kuali.org'>Kuali.org</a><span class='active'>blogs</span></div>				
+                <h1>kualigan [ˈkəʊˈɑːlɪgən]</h1>
+				<div class='field field-name-field-intro field-type-text-long field-label-hidden'>
+                  <div class='field-items'>
+                    <div class='field-item even'><p>n. <i>Slang</i> a rough lawless young <a href='http://www.kuali.org'>Kuali</a> developer.<br/>
+                    [perhaps variant of <i>Houlihan</i>, Irish <i>surname</i>]<br/>
+                    <b>kualiganism</b>  n<br/>
+                  </p>
+
+                </div></div></div>			</div>   <!-- /primary message -->
+
+                <div class='sidenav'>
+				  <div class='region region-sidenav'>
+    <div class='block block-block first last odd' id='block-block-8'>
+
+      
+  <div class='content'>
+    <ul>
+  <li><a href='http://www.arizona.edu/phonebook/przybylski'>Contact</a></li>
+  <li><a href='http://www.youtube.com/r351574nc3/'>Youtube</a></li>
+  <li><a href='https://plus.google.com/108581331141036122696/posts'>Google Plus</a></li>
+  <li><a href='http://www.github.com/r351574nc3'>GitHub</a></li>
+</ul>  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+			</div>
+					</div>
+	</div>   <!-- /prime -->
+
+<div class='stalker' id='stalker'>
+	<div class='midnav clearfix'>   <!-- midpage navigation -->
+		<div class='inner'>
+		      <div class='region region-midnav'>
+    <div class='block block-block first odd' id='block-block-5'>
+
+      
+  <div class='content'>
+    <!--<p class='highlight'><span><a href='/download'>Download</a><br/><a href='/test-drives'>Test Drive</a></span></p> -->
+  </div>
+
+</div><!-- /.block -->
+<div class='block block-menu-block last even' id='block-menu-block-3'>
+
+      
+  <div class='content'>
+    <div class='menu-block-wrapper menu-block-3 menu-name-main-menu parent-mlid-0 menu-level-3'>
+  <ul class='menu'>
+<li class='leaf menu-mlid-680'><a href='http://r351574nc3.github.com/lbcopy'>rsmart-lb-ant</a></li>
+<li class='leaf menu-mlid-680'><a href='http://r351574nc3.github.com/lbext'>rsmart-lb-extensions</a></li>
+<li class='leaf menu-mlid-680'><a href='http://r351574nc3.github.com/lb-maven-plugin'>lb-maven-plugin</a></li>
+<li class='leaf menu-mlid-680'><a href='http://r351574nc3.github.com/rice-lb-ext'>rice-lb-extensions</a></li>
+<li class='leaf menu-mlid-680'><a href='http://r351574nc3.github.com/maven-kuali-skin'>maven-kuali-skin</a></li>
+<!--<li class='first leaf active-trail active menu-mlid-655'><a class='active-trail active' href='/rice' title='Overview of Rice'>Overview</a></li>
+<li class='leaf has-children menu-mlid-674'><a href='/rice/modules'>Modules</a></li>
+<li class='leaf menu-mlid-680'><a href='/rice/partners'>Partners</a></li>
+<li class='leaf menu-mlid-686'><a href='/rice/timeline' title='Roadmap for Rice'>Timeline</a></li>
+<li class='leaf menu-mlid-682'><a href='/rice/organization'>Organization</a></li>
+<li class='last leaf has-children menu-mlid-684'><a href='/rice/implementations' title='Who&apos;s using Rice?'>Implementations</a></li>-->
+</ul></div>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+		</div>
+	</div>   <!-- /midpage navigation -->
+<div class='btm'/>
+</div>
+<div id='main-content'>
+<div class='active-area'>
+	<div class='main-content clearfix with-sidebar'>   <!-- main content -->
+		<div class='inner'>
+						<div class='left-col'>
+				<div class='field field-name-body field-type-text-with-summary field-label-hidden'><div class='field-items'><div class='field-item even' property='content:encoded'>
+      <b:section class='subheader' id='subheader' maxwidgets='1' showaddelement='no'>
+<b:widget id='Header1' locked='true' title='Kualigan (Header)' type='Header'/>
+</b:section>
+<!-- Place this tag where you want the +1 button to render. -->
+<div class='g-plusone'/>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type='text/javascript'>
+  (function() {
+    var po = document.createElement(&#39;script&#39;); po.type = &#39;text/javascript&#39;; po.async = true;
+    po.src = &#39;https://apis.google.com/js/plusone.js&#39;;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<hr/>
+         <div id='blog-wrapper'>
+        <b:section class='blog' id='blog' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+</b:section>
+</div>
+
+</div></div></div>			</div>
+							<div class='right-col'>
+										<div class='field field-name-field-sidebar field-type-text-long field-label-hidden'><div class='field-items'><div class='field-item even'><b:section class='sidebar' id='sidebar' preferred='yes'>
+<b:widget id='Profile1' locked='false' title='About Me' type='Profile'/>
+<b:widget id='Subscribe1' locked='false' title='Subscribe To' type='Subscribe'/>
+<b:widget id='Label1' locked='false' title='Labels' type='Label'/>
+<b:widget id='PageList1' locked='false' title='Pages' type='PageList'/>
+<b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
+</b:section>
+      </div></div></div>				</div>
+					</div>
+</div></div>
+	</div>   <!-- /main content -->
+	<div class='feedback clearfix'>   <!-- feedback bar -->
+		<div class='inner'>
+			  <div class='region region-footertop'>
+    <div class='block block-block first last odd' id='block-block-1'>
+
+      
+  <div class='content'>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+		</div>
+	</div>   <!-- /feedback bar -->
+	<div class='footer'>   <!-- footer -->
+		<div class='inner'>
+			  <div class='region region-footer'>
+    <div class='block block-block first odd' id='block-block-3'>
+
+      
+  <div class='content'>
+    <p class='copyright'>Copyright &#169; Kuali Foundation 2011</p>
+<p><a class='feed-icon' href='/feeds/posts/default?alt=rss'><img alt='Syndicate content' class='rss' height='16' src='http://www.kuali.org/misc/feed.png' title='Kualigan Insider Feed Channel' width='16'/></a></p>
+ 
+  </div>
+
+</div><!-- /.block -->
+<div class='block block-menu last even' id='block-menu-menu-footer-menu'>
+
+        <h2 class='block-title'>Footer Menu</h2>
+    
+  <div class='content'>
+ </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+		</div>
+	</div>   <!-- /footer -->
+<script type='text/javascript'>
+var gaJsHost = ((&quot;https:&quot; == document.location.protocol) ? &quot;https://ssl.&quot; : &quot;http://www.&quot;);
+document.write(unescape(&quot;%3Cscript src=&#39;&quot; + gaJsHost + &quot;google-analytics.com/ga.js&#39; type=&#39;text/javascript&#39;%3E%3C/script%3E&quot;));
+</script>
+<script type='text/javascript'>
+try {
+var pageTracker = _gat._getTracker(&quot;UA-16006964-1&quot;);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	</body> 
+</html>
